@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(16px, 1vw, 24px);
+}
+.marquee h4 {
+  color: transparent;
+  -webkit-text-stroke: 0.1vw #0023ff;
+}
+
+.marquee-item-container {
+  animation: marquee 20s linear infinite;
+}
+
+.marquee:nth-child(2) .marquee-item-container {
+  animation-direction: reverse;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.admission {
+  display: grid;
+  grid-template-areas:
+    ". f . . ."
+    ". f . . a"
+    ". f . . ."
+    ". g . . ."
+    ". g . . b"
+    ". g . . ."
+    ". h . . ."
+    ". h . . c"
+    ". h . . ."
+    ". i . . ."
+    ". i . . d"
+    ". i . . ."
+    ". j . . ."
+    ". j . . e"
+    ". j . . .";
+  gap: 0 1.5rem;
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line5 {
+  min-height: 10rem;
+}
+
+.line1 {
+  grid-area: f;
+}
+.line2 {
+  grid-area: g;
+}
+.line3 {
+  grid-area: h;
+}
+.line4 {
+  grid-area: i;
+}
+.line5 {
+  grid-area: j;
+}
+
+.admission > h4 {
+  align-self: center;
+  justify-self: center;
+}
+
+.first {
+  grid-area: a;
+}
+
+.second {
+  grid-area: b;
+}
+.third {
+  grid-area: c;
+}
+.fourth {
+  grid-area: d;
+}
+.fifth {
+  grid-area: e;
+}
+
+@media (min-width: 1024px) {
+  .admission {
+    display: grid;
+    grid-template-areas:
+      ". . f . ."
+      "a . f . ."
+      ". . f . ."
+      ". . g . ."
+      ". . g . b"
+      ". . g . ."
+      ". . h . ."
+      "c . h . ."
+      ". . h . ."
+      ". . i . ."
+      ". . i . d"
+      ". . i . ."
+      ". . j . ."
+      "e . j . ."
+      ". . j . .";
+  }
+  .admission > h4 {
+    width: 50%;
+  }
+}
