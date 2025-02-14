@@ -380,6 +380,7 @@
     );
   }
 }
+
 @layer base {
   *,
   ::after,
