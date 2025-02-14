@@ -551,6 +551,9 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -628,9 +631,6 @@
   }
   .border-\[\#fff\] {
     border-color: #fff;
-  }
-  .bg-\[\#2b78fe\] {
-    background-color: #2b78fe;
   }
   .bg-\[\#0023ff\] {
     background-color: #0023ff;
@@ -807,6 +807,13 @@
     &:hover {
       @media (hover: hover) {
         cursor: pointer;
+      }
+    }
+  }
+  .hover\:bg-\[\#0023ff\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #0023ff;
       }
     }
   }
