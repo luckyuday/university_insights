@@ -20,7 +20,7 @@ University Insights is a responsive landing page designed to help students explo
 
 1. **Clone the Repository**
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/luckyuday/university_insights.git
    cd University-Insights
    ```
 2. **Install Dependencies**
@@ -84,12 +84,6 @@ University Insights is a landing page developed to streamline the MBBS applicati
 - Minimized CSS and JS using **Vite’s build optimization**.
 - Ensured **lazy loading** of images for better load times.
 
-## Challenges and Solutions
-
-- **Issue:** Tailwind configuration conflicts.
-  - **Solution:** Adjusted the `tailwind.config.js` to enable JIT mode.
-- **Issue:** Form validation and submission handling.
-  - **Solution:** Used JavaScript to validate inputs and send data via an API.
 
 ## Conclusion
 
