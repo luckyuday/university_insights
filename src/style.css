@@ -17,7 +17,7 @@ html {
   animation: marquee 20s linear infinite;
 }
 
-.marquee:nth-child(2) .marquee-item-container {
+.marquee:nth-child(3) .marquee-item-container {
   animation-direction: reverse;
 }
 

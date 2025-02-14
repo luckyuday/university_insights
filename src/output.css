@@ -1,13 +1,12 @@
 /*! tailwindcss v4.0.6 | MIT License | https://tailwindcss.com */
 @layer theme, base, components, utilities;
 @layer theme {
-  :root,
-  :host {
+  :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", monospace;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
     --color-red-50: oklch(0.971 0.013 17.38);
     --color-red-100: oklch(0.936 0.032 17.717);
     --color-red-200: oklch(0.885 0.062 18.334);
@@ -328,12 +327,9 @@
     --shadow-2xs: 0 1px rgb(0 0 0 / 0.05);
     --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),
-      0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-      0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     --inset-shadow-2xs: inset 0 1px rgb(0 0 0 / 0.05);
     --inset-shadow-xs: inset 0 1px 1px rgb(0 0 0 / 0.05);
@@ -380,35 +376,20 @@
     );
   }
 }
-
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0 solid;
   }
-  html,
-  :host {
+  html, :host {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
-    font-family: var(
-      --default-font-family,
-      ui-sans-serif,
-      system-ui,
-      sans-serif,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      "Noto Color Emoji"
-    );
+    font-family: var( --default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" );
     font-feature-settings: var(--default-font-feature-settings, normal);
-    font-variation-settings: var(--default-font-variation-settings, normal);
+    font-variation-settings: var( --default-font-variation-settings, normal );
     -webkit-tap-highlight-color: transparent;
   }
   body {
@@ -423,12 +404,7 @@
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
     font-weight: inherit;
   }
@@ -437,37 +413,19 @@
     -webkit-text-decoration: inherit;
     text-decoration: inherit;
   }
-  b,
-  strong {
+  b, strong {
     font-weight: bolder;
   }
-  code,
-  kbd,
-  samp,
-  pre {
-    font-family: var(
-      --default-mono-font-family,
-      ui-monospace,
-      SFMono-Regular,
-      Menlo,
-      Monaco,
-      Consolas,
-      "Liberation Mono",
-      "Courier New",
-      monospace
-    );
-    font-feature-settings: var(--default-mono-font-feature-settings, normal);
-    font-variation-settings: var(
-      --default-mono-font-variation-settings,
-      normal
-    );
+  code, kbd, samp, pre {
+    font-family: var( --default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace );
+    font-feature-settings: var( --default-mono-font-feature-settings, normal );
+    font-variation-settings: var( --default-mono-font-variation-settings, normal );
     font-size: 1em;
   }
   small {
     font-size: 80%;
   }
-  sub,
-  sup {
+  sub, sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -493,32 +451,18 @@
   summary {
     display: list-item;
   }
-  ol,
-  ul,
-  menu {
+  ol, ul, menu {
     list-style: none;
   }
-  img,
-  svg,
-  video,
-  canvas,
-  audio,
-  iframe,
-  embed,
-  object {
+  img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
+    vertical-align: middle;
   }
-  img,
-  video {
+  img, video {
     max-width: 100%;
     height: auto;
   }
-  button,
-  input,
-  select,
-  optgroup,
-  textarea,
-  ::file-selector-button {
+  button, input, select, optgroup, textarea, ::file-selector-button {
     font: inherit;
     font-feature-settings: inherit;
     font-variation-settings: inherit;
@@ -557,27 +501,16 @@
   ::-webkit-datetime-edit-fields-wrapper {
     padding: 0;
   }
-  ::-webkit-datetime-edit,
-  ::-webkit-datetime-edit-year-field,
-  ::-webkit-datetime-edit-month-field,
-  ::-webkit-datetime-edit-day-field,
-  ::-webkit-datetime-edit-hour-field,
-  ::-webkit-datetime-edit-minute-field,
-  ::-webkit-datetime-edit-second-field,
-  ::-webkit-datetime-edit-millisecond-field,
-  ::-webkit-datetime-edit-meridiem-field {
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
     padding-block: 0;
   }
   :-moz-ui-invalid {
     box-shadow: none;
   }
-  button,
-  input:where([type="button"], [type="reset"], [type="submit"]),
-  ::file-selector-button {
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
     appearance: button;
   }
-  ::-webkit-inner-spin-button,
-  ::-webkit-outer-spin-button {
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
     height: auto;
   }
   [hidden]:where(:not([hidden="until-found"])) {
@@ -604,7 +537,7 @@
     z-index: 9999;
   }
   .mx-\[\.5rem\] {
-    margin-inline: 0.5rem;
+    margin-inline: .5rem;
   }
   .mt-\[1\.5rem\] {
     margin-top: 1.5rem;
@@ -631,8 +564,8 @@
     width: 100%;
   }
   .-translate-1\/2 {
-    --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
-    --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .flex-col {
@@ -739,10 +672,10 @@
     padding-inline: 3rem;
   }
   .py-\[\.5rem\] {
-    padding-block: 0.5rem;
+    padding-block: .5rem;
   }
   .py-\[\.8rem\] {
-    padding-block: 0.8rem;
+    padding-block: .8rem;
   }
   .py-\[1\.5rem\] {
     padding-block: 1.5rem;
@@ -766,10 +699,10 @@
     text-align: right;
   }
   .font-\[\'IBM_Plex_Sans\'\] {
-    font-family: "IBM Plex Sans";
+    font-family: 'IBM Plex Sans';
   }
   .font-\[\'Oswald\'\] {
-    font-family: "Oswald";
+    font-family: 'Oswald';
   }
   .text-\[0\.9rem\] {
     font-size: 0.9rem;
@@ -863,10 +796,7 @@
   }
   .transition-all {
     transition-property: all;
-    transition-timing-function: var(
-      --tw-ease,
-      var(--default-transition-timing-function)
-    );
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .outline-none {
@@ -911,17 +841,17 @@
   }
   .lg\:w-1\/2 {
     @media (width >= 64rem) {
-      width: calc(1 / 2 * 100%);
+      width: calc(1/2 * 100%);
     }
   }
   .lg\:w-2\/5 {
     @media (width >= 64rem) {
-      width: calc(2 / 5 * 100%);
+      width: calc(2/5 * 100%);
     }
   }
   .lg\:w-3\/5 {
     @media (width >= 64rem) {
-      width: calc(3 / 5 * 100%);
+      width: calc(3/5 * 100%);
     }
   }
   .lg\:flex-row {
@@ -966,6 +896,9 @@
     }
   }
 }
+input:autofill {
+  background-color: red;
+}
 html {
   scroll-behavior: smooth;
   font-size: clamp(16px, 1vw, 24px);
@@ -977,7 +910,7 @@ html {
 .marquee-item-container {
   animation: marquee 20s linear infinite;
 }
-.marquee:nth-child(2) .marquee-item-container {
+.marquee:nth-child(3) .marquee-item-container {
   animation-direction: reverse;
 }
 @keyframes marquee {
@@ -993,11 +926,7 @@ html {
   grid-template-areas: ". f . . ." ". f . . a" ". f . . ." ". g . . ." ". g . . b" ". g . . ." ". h . . ." ". h . . c" ". h . . ." ". i . . ." ". i . . d" ". i . . ." ". j . . ." ". j . . e" ". j . . .";
   gap: 0 1.5rem;
 }
-.line1,
-.line2,
-.line3,
-.line4,
-.line5 {
+.line1, .line2, .line3, .line4, .line5 {
   min-height: 10rem;
 }
 .line1 {
@@ -1049,8 +978,7 @@ html {
   }
 }
 @keyframes ping {
-  75%,
-  100% {
+  75%, 100% {
     transform: scale(2);
     opacity: 0;
   }
@@ -1061,8 +989,7 @@ html {
   }
 }
 @keyframes bounce {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(-25%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
